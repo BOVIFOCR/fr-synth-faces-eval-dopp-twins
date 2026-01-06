@@ -13,3 +13,21 @@
 <sup>5</sup>Biometrics and Data Pattern Analytics Laboratory — BiDA-Lab, Universidad Autónoma de Madrid, Madrid, Spain (e-mail: ruben.tolosana@uam.es) <br>
 
 </div>
+
+---
+
+ABSTRACT: <br>
+Synthetic face datasets for training Face Recognition (FR) models have gained significant
+interest in recent years due to privacy concerns associated with real facial data. Recent advances in generative
+techniques, based mainly on Generative Adversarial Networks (GANs) and Diffusion Models, have led to the
+proliferation of various synthetic datasets. Although the performance of FR models trained on synthetic data
+is becoming similar to those of models trained on real data when evaluated on standard benchmarks such as
+LFW, CFP-FP, AgeDB, and CALFW, little is known about their effectiveness in more challenging scenarios
+involving individuals with high facial similarity, such as doppelgängers (lookalikes) and identical twins. This
+work addresses this gap by evaluating state-of-the-art FR models trained on real or synthetic datasets across
+four testing datasets that feature high facial similarity: HDA Doppelgänger, DoppelVer, 3D-TEC, and ND-
+Twins-2009-2010. We analyze verification performances, including subgroup analysis by ethnicity, gender,
+and age, to better understand demographic disparities. Our results show that the gap between synthetic and
+real face datasets is larger in these challenging scenarios than on typical benchmarks. We also observe similar
+biases in FR models trained on synthetic or real data, suggesting that current synthetic datasets may inherit
+biases through the use of real data at some stage in their pipeline
