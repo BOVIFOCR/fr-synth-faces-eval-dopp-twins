@@ -41,23 +41,11 @@ biases through the use of real data at some stage in their pipeline
  - torch==1.10.1
  - torchvision==0.11.2
 
-#### Install CUDA
-```
-# system level
-wget https://developer.download.nvidia.com/compute/cuda/11.3.0/local_installers/cuda_11.3.0_465.19.01_linux.run
-sudo sh cuda_11.3.0_465.19.01_linux.run
-export CUDA_HOME=/usr/local/cuda-11.3
-
-or
-
-# env level
-conda install cudatoolkit=11.3.1 -c conda-forge --yes
-```
 
 #### Clone repository
 ```
-git clone https://github.com/UFPR-FaceRec/insightface.git
-cd insightface/recognition/arcface_torch
+git clone https://github.com/BOVIFOCR/fr-synth-faces-eval-dopp-twins.git
+cd fr-synth-faces-eval-dopp-twins/recognition/arcface_torch
 ```
 
 #### Create env and install dependencies
@@ -66,10 +54,12 @@ ENV_NAME=insightface_py37
 conda create --name $ENV_NAME python=3.7 --yes
 conda activate $ENV_NAME
 
+conda install cudatoolkit=11.3.1 -c conda-forge --yes    # install CUDA at env
 pip3 install numpy==1.21.6
 pip3 install torch==1.10.1 torchvision==0.11.2 --extra-index-url https://download.pytorch.org/whl/cu113
 pip3 install -r requirement_ufpr_facerec.txt
 ```
+
 
 #### Test simple face recognition
 
