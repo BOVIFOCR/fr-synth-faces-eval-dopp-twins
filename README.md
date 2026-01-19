@@ -57,7 +57,7 @@ conda activate $ENV_NAME
 conda install cudatoolkit=11.3.1 -c conda-forge --yes    # install CUDA at env
 pip3 install numpy==1.21.6
 pip3 install torch==1.10.1 torchvision==0.11.2 --extra-index-url https://download.pytorch.org/whl/cu113
-pip3 install -r requirement_ufpr_facerec.txt
+pip3 install -r requirements.txt
 ```
 
 
