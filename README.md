@@ -50,7 +50,7 @@ cd fr-synth-faces-eval-dopp-twins/recognition/arcface_torch
 
 #### Create env and install dependencies
 ```
-ENV_NAME=insightface_py37
+ENV_NAME=fr_synth_faces_eval_dopp_twins
 conda create --name $ENV_NAME python=3.7 --yes
 conda activate $ENV_NAME
 
