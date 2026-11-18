@@ -43,11 +43,11 @@ pip3 install -r requirement_ufpr_facerec.txt
 ![Instructions to download ms1mv3_arcface_r100_fp16/backbone.pth](examples/download_instructions.png "Download ms1mv3_arcface_r100_fp16/backbone.pth")
 
 
-- Run `test_UFPR_FaceRec.py`
+- Run `test_single_verification.py`
 
 ```
 cd recognition/arcface_torch
-python test_UFPR_FaceRec.py --network r100 --model trained_models/ms1mv3_arcface_r100_fp16/backbone.pth --img1 examples/Aaron_Eckhart/0.png --img2 examples/Aaron_Eckhart/1.png
+python test_single_verification.py --network r100 --model trained_models/ms1mv3_arcface_r100_fp16/backbone.pth --img1 examples/Aaron_Eckhart/0.png --img2 examples/Aaron_Eckhart/1.png
 
 OUTPUT:
 Loading model r100: 'trained_models/ms1mv3_arcface_r100_fp16/backbone.pth'
